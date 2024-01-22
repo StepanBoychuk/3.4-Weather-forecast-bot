@@ -1,0 +1,25 @@
+{
+  "name": "3.4-weather-forecast-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.foxminded.ua:foxstudent106145/3.4-weather-forecast-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.5",
+    "dotenv": "^16.3.2",
+    "node-telegram-bot-api": "^0.64.0",
+    "pino": "^8.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
