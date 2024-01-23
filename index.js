@@ -12,7 +12,11 @@ bot.on("polling_error", logger.error);
 
 bot.on("text", (msg) => {
   if (commands[msg.text]) {
-    bot.sendMessage(msg.chat.id, commands[msg.text].text);
+    bot.sendMessage(msg.chat.id, commands[msg.text].text, {
+      reply_markup: {
+        keyboard: commands[msg.text].options.keyboard,
+      },
+    });
     return;
   }
   bot.sendMessage(msg.chat.id, "Unexpected command. Try /help.");
